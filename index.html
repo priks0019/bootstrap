@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>bootstrap learning</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-sm bg-dark justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">logo</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">link1</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">link2</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="container-fluid py-4 bg-primary text-white text-center">
+        <h1>My First Bootstrap Page</h1>
+        <p>Resize this responsive page to see the effect</p>
+      </div>
+      <!-- <div class="container-sm border mt-5">
+      <div class="row">
+        <div class="col-sm-4">
+          <h2>Column 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+            praesentium similique. Harum reprehenderit blanditiis fuga illum
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h2>Column 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+            praesentium similique. Harum reprehenderit blanditiis fuga illum
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h2>Column 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+            praesentium similique. Harum reprehenderit blanditiis fuga illum
+          </p>
+        </div>
+      </div> -->
+      <!-- table hover dark  and other things -->
+      <table
+        class="container table tabel-responsive-sm table-hover table-primary my-4"
+      >
+        <thead class="table-info">
+          <tr>
+            <th>name</th>
+            <th>Company</th>
+            <th>designation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>vikrant</td>
+            <td>Zasya Solution</td>
+            <td>software</td>
+          </tr>
+
+          <tr>
+            <td>vikrant</td>
+            <td>Zasya Solution</td>
+            <td>software</td>
+          </tr>
+
+          <tr>
+            <td>vikrant</td>
+            <td>Zasya Solution</td>
+            <td>software</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- image rounded-circle -->
+      <div class="container">
+        <img class="rounded-circle float-" src="/images/icon.png" alt="" />
+      </div>
+
+      <div class="container alert alert-primary alert-dismissible">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+        Success! This alert box could indicate a successful or positive action.
+      </div>
+      <!--full width button-->
+      <div class="container mt-4 d-grid">
+        <button type="button" class="btn mt-3 btn-primary">
+          <span class="spinner-border spinner-border-sm"></span>
+          Success
+        </button>
+        <button type="button" class="btn mt-3 btn-info">
+          <span class="spinner-grow spinner-grow-sm"></span>
+          information
+        </button>
+        <button type="button" class="btn mt-3 btn-danger">danger</button>
+        <!-- button group -->
+        <div class="btn-group my-4">
+          <button type="button" class="btn btn-outline-primary">Success</button>
+          <button type="button" class="btn btn-outline-info">
+            information
+          </button>
+          <button type="button" class="btn btn-outline-danger">
+            danger<span class="badge bg-primary">new</span>
+          </button>
+          <!-- it will work with the script  -->
+          <!-- dropdown -->
+          <div class="btn-group">
+            <button
+              type="dropdown"
+              class="btn btn-primary dropdown-toggle"
+              data-bs-toggle="dropdown"
+            >
+              Class
+            </button>
+
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">1</a>
+              <a class="dropdown-item" href="#">2</a>
+              <a class="dropdown-item" href="#">3</a>
+              <a class="dropdown-item" href="#">4</a>
+              <a class="dropdown-item" href="#">5</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- badges -->
+      <div class="container">
+        <h5>
+          this is the new line for the page
+          <span class="badge bg-primary">new</span>
+        </h5>
+      </div>
+      <div class="progress my-4">
+        <div
+          class="progress-bar progress-bar-striped progress-bar-animated progress-bar-sm bg-primary"
+          style="width: 70%; height: 10px"
+        >
+          70%
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar bg-info" style="width: 50%">free space</div>
+        <div class="progress-bar bg-warning" style="width: 40%">warning</div>
+        <div class="progress-bar bg-danger" style="width: 10%">Danger</div>
+      </div>
+      <!-- spinner are here -->
+      <div class="container-fluid">
+        <div class="spinner-border text-primary"></div>
+        <div class="spinner-border text-success"></div>
+        <div class="spinner-border text-warning"></div>
+        <div class="spinner-border text-danger"></div>
+        <div class="spinner-border text-secondary"></div>
+      </div>
+
+      <!-- pagination -->
+      <ul class="pagination pagination-lsm justify-content-center">
+        <li class="page-item"><a href="#" class="page-link"> previous </a></li>
+        <li class="page-item active"><a href="#" class="page-link"> 1 </a></li>
+        <li class="page-item"><a href="#" class="page-link"> 2 </a></li>
+        <li class="page-item"><a href="#" class="page-link"> 3 </a></li>
+
+        <li class="page-item"><a href="#" class="page-link"> next </a></li>
+      </ul>
+
+      <ul class="list-group">
+        <li
+          class="list-group-item d-flex list-group-item-success justify-content-between list-group-item-action"
+        >
+          inbox <span class="badge bg-info">1</span>
+        </li>
+        <li
+          class="list-group-item d-flex list-group-item-success justify-content-between list-group-item-action"
+        >
+          add <span class="badge bg-info">2</span>
+        </li>
+        <li
+          class="list-group-item d-flex list-group-item-success justify-content-between list-group-item-action"
+        >
+          junk <span class="badge bg-info">3</span>
+        </li>
+        <li
+          class="list-group-item d-flex list-group-item-success justify-content-between list-group-item-action"
+        >
+          social <span class="badge bg-info">4</span>
+        </li>
+        <li
+          class="list-group-item d-flex list-group-item-success justify-content-between list-group-item-action"
+        >
+          promotion <span class="badge bg-info">5</span>
+        </li>
+      </ul>
+
+      <div class="dropdown">
+        <button
+          type="button"
+          class="btn dropdown-toggle btn-primary"
+          data-bs-toggle="dropdown"
+        >
+          Dropdown Button
+        </button>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item">1</li>
+          <li class="dropdown-item">2</li>
+          <li class="dropdown-item">3</li>
+        </ul>
+
+        <!-- collapse button and it will work with the script language -->
+        <button
+          data-bs-toggle="collapse"
+          class="btn btn-primary"
+          data-bs-target="#demo"
+        >
+          collapse
+        </button>
+        <div id="demo" class="collapse">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
+          facere tenetur molestiae voluptate provident incidunt nam dignissimos
+          at verita animi unde! Cumque, eveniet minus ut doloribus porro nobis
+          doloremque!
+        </div>
+      </div>
+      <ul class="nav justify-content-around nav-tabs">
+        <li class="nav-item">
+          <a href="#" class="nav-link bg-primary text-white">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
