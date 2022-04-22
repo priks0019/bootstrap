@@ -8,33 +8,60 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>bootstrap learning</title>
   </head>
   <body>
-    
-      <nav class="navbar container-fluid navbar-expand-sm justify-content-between bg-dark px-4">
-        <ul class="navbar-nav me-2">
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white">logo</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white">link1</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white">link2</a>
-          </li>
-        </ul>
-        <form action="" class="d-flex  mx-5 ">
-          <input type="text" class="form-control me-2">
-          <button class="btn btn-primary" placeholder="Search">Search</button>
-        </form>
-      </nav>
+    <nav
+      class="navbar container-fluid navbar-expand-sm justify-content-between bg-dark px-4"
+    >
+      <ul class="navbar-nav me-2">
+        <li class="logo">
+          <a href="#" class="nav-link text-white"
+            ><span
+              ><img
+                class="rounded-circle"
+                src="/images/icon.png"
+                alt=""
+                style="height: 50px"
+              /> </span
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white">link1</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white">link2</a>
+        </li>
+      </ul>
+      <form action="" class="d-flex mx-5">
+        <input type="text" class="form-control me-2" />
+        <button class="btn btn-primary" placeholder="Search">Search</button>
+      </form>
+    </nav>
 
-      <div class="container-fluid py-4 bg-primary text-white text-center">
-        <h1>My First Bootstrap Page</h1>
-        <p>Resize this responsive page to see the effect</p>
+    <div class="container-fluid py-4 bg-primary text-white text-center">
+      <h1>My First Bootstrap Page</h1>
+      <p>Resize this responsive page to see the effect</p>
+    </div>
+    <div class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>this is the carousel or we can say that this is a slide show</h2>
+          <p>this is the paragraph for the carousels</p>
+        </div>
+        <div class="carousel-item">
+          <h2>this is the carousel or we can say that this is a slide show</h2>
+          <p>this is the paragraph for the carousels</p>
+        </div>
+        <div class="carousel-item">
+          <h2>this is the carousel or we can say that this is a slide show</h2>
+          <p>this is the paragraph for the carousels</p>
+        </div>
       </div>
-      <!-- <div class="container-sm border mt-5">
+    </div>
+
+    <div class="container-sm mt-5">
       <div class="row">
         <div class="col-sm-4">
           <h2>Column 1</h2>
@@ -57,8 +84,9 @@
             praesentium similique. Harum reprehenderit blanditiis fuga illum
           </p>
         </div>
-      </div> -->
-      <!-- table hover dark  and other things -->
+      </div>
+    </div>
+    <!-- table hover dark  and other things 
       <table
         class="container table tabel-responsive-sm table-hover table-primary my-4"
       >
@@ -88,168 +116,200 @@
             <td>software</td>
           </tr>
         </tbody>
-      </table>
-      <!-- image rounded-circle -->
-      <div class="container">
-        <img class="rounded-circle float-" src="/images/icon.png" alt="" />
-      </div>
+      </table>-->
+    <!-- image rounded-circle -->
+    <div class="container">
+      <img class="rounded-circle float-" src="/images/icon.png" alt="" />
+    </div>
 
-      <div class="container alert alert-primary alert-dismissible">
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="alert"
-        ></button>
-        Success! This alert box could indicate a successful or positive action.
-      </div>
-      <!--full width button-->
-      <div class="container mt-4 d-grid">
-        <button type="button" class="btn mt-3 btn-primary">
-          <span class="spinner-border spinner-border-sm"></span>
-          Success
+    <div class="container alert alert-primary alert-dismissible">
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      Success! This alert box could indicate a successful or positive action.
+    </div>
+    <!--full width button-->
+    <div class="container mt-4 d-grid">
+      <button type="button" class="btn mt-3 btn-primary">
+        <span class="spinner-border spinner-border-sm"></span>
+        Success
+      </button>
+      <button type="button" class="btn mt-3 btn-info">
+        <span class="spinner-grow spinner-grow-sm"></span>
+        information
+      </button>
+      <button type="button" class="btn mt-3 btn-danger">danger</button>
+      <!-- button group -->
+      <div class="btn-group my-4">
+        <button type="button" class="btn btn-outline-primary">Success</button>
+        <button type="button" class="btn btn-outline-info">information</button>
+        <button type="button" class="btn btn-outline-danger">
+          danger<span class="badge bg-primary">new</span>
         </button>
-        <button type="button" class="btn mt-3 btn-info">
-          <span class="spinner-grow spinner-grow-sm"></span>
-          information
-        </button>
-        <button type="button" class="btn mt-3 btn-danger">danger</button>
-        <!-- button group -->
-        <div class="btn-group my-4">
-          <button type="button" class="btn btn-outline-primary">Success</button>
-          <button type="button" class="btn btn-outline-info">
-            information
+        <!-- it will work with the script  -->
+        <!-- dropdown -->
+        <div class="btn-group">
+          <button
+            type="dropdown"
+            class="btn btn-primary dropdown-toggle"
+            data-bs-toggle="dropdown"
+          >
+            Class
           </button>
-          <button type="button" class="btn btn-outline-danger">
-            danger<span class="badge bg-primary">new</span>
-          </button>
-          <!-- it will work with the script  -->
-          <!-- dropdown -->
-          <div class="btn-group">
-            <button
-              type="dropdown"
-              class="btn btn-primary dropdown-toggle"
-              data-bs-toggle="dropdown"
-            >
-              Class
-            </button>
 
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">1</a>
-              <a class="dropdown-item" href="#">2</a>
-              <a class="dropdown-item" href="#">3</a>
-              <a class="dropdown-item" href="#">4</a>
-              <a class="dropdown-item" href="#">5</a>
-            </div>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">1</a>
+            <a class="dropdown-item" href="#">2</a>
+            <a class="dropdown-item" href="#">3</a>
+            <a class="dropdown-item" href="#">4</a>
+            <a class="dropdown-item" href="#">5</a>
           </div>
         </div>
       </div>
-      <!-- badges -->
-      <div class="container">
-        <h5>
-          this is the new line for the page
-          <span class="badge bg-primary">new</span>
-        </h5>
-      </div>
-      <div class="progress my-4">
-        <div
-          class="progress-bar progress-bar-striped progress-bar-animated progress-bar-sm bg-primary"
-          style="width: 70%; height: 10px"
-        >
-          70%
-        </div>
-      </div>
-      <div class="progress">
-        <div class="progress-bar bg-info" style="width: 50%">free space</div>
-        <div class="progress-bar bg-warning" style="width: 40%">warning</div>
-        <div class="progress-bar bg-danger" style="width: 10%">Danger</div>
-      </div>
-      <!-- spinner are here -->
-      <div class="container-fluid">
-        <div class="spinner-border text-primary"></div>
-        <div class="spinner-border text-success"></div>
-        <div class="spinner-border text-warning"></div>
-        <div class="spinner-border text-danger"></div>
-        <div class="spinner-border text-secondary"></div>
-      </div>
-
-      <!-- pagination -->
-      <ul class="pagination pagination-lsm justify-content-center">
-        <li class="page-item"><a href="#" class="page-link"> previous </a></li>
-        <li class="page-item active"><a href="#" class="page-link"> 1 </a></li>
-        <li class="page-item"><a href="#" class="page-link"> 2 </a></li>
-        <li class="page-item"><a href="#" class="page-link"> 3 </a></li>
-
-        <li class="page-item"><a href="#" class="page-link"> next </a></li>
-      </ul>
-
-      <ul class="list-group">
-        <li
-          class="list-group-item d-flex list-group-item-success justify-content-between list-group-item-action"
-        >
-          inbox <span class="badge bg-info">1</span>
-        </li>
-        <li
-          class="list-group-item d-flex list-group-item-success justify-content-between list-group-item-action"
-        >
-          add <span class="badge bg-info">2</span>
-        </li>
-        <li
-          class="list-group-item d-flex list-group-item-success justify-content-between list-group-item-action"
-        >
-          junk <span class="badge bg-info">3</span>
-        </li>
-        <li
-          class="list-group-item d-flex list-group-item-success justify-content-between list-group-item-action"
-        >
-          social <span class="badge bg-info">4</span>
-        </li>
-        <li
-          class="list-group-item d-flex list-group-item-success justify-content-between list-group-item-action"
-        >
-          promotion <span class="badge bg-info">5</span>
-        </li>
-      </ul>
-
-      <div class="dropdown">
-        <button
-          type="button"
-          class="btn dropdown-toggle btn-primary"
-          data-bs-toggle="dropdown"
-        >
-          Dropdown Button
-        </button>
-        <ul class="dropdown-menu">
-          <li class="dropdown-item">1</li>
-          <li class="dropdown-item">2</li>
-          <li class="dropdown-item">3</li>
-        </ul>
-
-        <!-- collapse button and it will work with the script language -->
-        <button
-          data-bs-toggle="collapse"
-          class="btn btn-primary"
-          data-bs-target="#demo"
-        >
-          collapse
-        </button>
-        <div id="demo" class="collapse">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
-          facere tenetur molestiae voluptate provident incidunt nam dignissimos
-          at verita animi unde! Cumque, eveniet minus ut doloribus porro nobis
-          doloremque!
-        </div>
-      </div>
-      <ul class="nav justify-content-around nav-tabs">
-        <li class="nav-item">
-          <a href="#" class="nav-link bg-primary text-white">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Contact</a>
-        </li>
-      </ul>
     </div>
+    <!-- badges -->
+    <div class="container">
+      <h5>
+        this is the new line for the page
+        <span class="badge bg-primary">new</span>
+      </h5>
+    </div>
+    <div class="progress my-4">
+      <div
+        class="progress-bar progress-bar-striped progress-bar-animated progress-bar-sm bg-primary"
+        style="width: 70%; height: 10px"
+      >
+        70%
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar bg-info" style="width: 50%">free space</div>
+      <div class="progress-bar bg-warning" style="width: 40%">warning</div>
+      <div class="progress-bar bg-danger" style="width: 10%">Danger</div>
+    </div>
+    <!-- spinner are here -->
+    <div class="container-fluid">
+      <div class="spinner-border text-primary"></div>
+      <div class="spinner-border text-success"></div>
+      <div class="spinner-border text-warning"></div>
+      <div class="spinner-border text-danger"></div>
+      <div class="spinner-border text-secondary"></div>
+    </div>
+
+    <!-- pagination -->
+    <ul class="pagination pagination-lsm justify-content-center">
+      <li class="page-item"><a href="#" class="page-link"> previous </a></li>
+      <li class="page-item active"><a href="#" class="page-link"> 1 </a></li>
+      <li class="page-item"><a href="#" class="page-link"> 2 </a></li>
+      <li class="page-item"><a href="#" class="page-link"> 3 </a></li>
+
+      <li class="page-item"><a href="#" class="page-link"> next </a></li>
+    </ul>
+
+    <ul class="list-group">
+      <li
+        class="list-group-item d-flex list-group-item-success justify-content-between list-group-item-action"
+      >
+        inbox <span class="badge bg-info">1</span>
+      </li>
+      <li
+        class="list-group-item d-flex list-group-item-success justify-content-between list-group-item-action"
+      >
+        add <span class="badge bg-info">2</span>
+      </li>
+      <li
+        class="list-group-item d-flex list-group-item-success justify-content-between list-group-item-action"
+      >
+        junk <span class="badge bg-info">3</span>
+      </li>
+      <li
+        class="list-group-item d-flex list-group-item-success justify-content-between list-group-item-action"
+      >
+        social <span class="badge bg-info">4</span>
+      </li>
+      <li
+        class="list-group-item d-flex list-group-item-success justify-content-between list-group-item-action"
+      >
+        promotion <span class="badge bg-info">5</span>
+      </li>
+    </ul>
+
+    <div class="dropdown">
+      <button
+        type="button"
+        class="btn dropdown-toggle btn-primary"
+        data-bs-toggle="dropdown"
+      >
+        Dropdown Button
+      </button>
+      <ul class="dropdown-menu">
+        <li class="dropdown-item">1</li>
+        <li class="dropdown-item">2</li>
+        <li class="dropdown-item">3</li>
+      </ul>
+
+      <!-- collapse button and it will work with the script language -->
+      <button
+        data-bs-toggle="collapse"
+        class="btn btn-primary"
+        data-bs-target="#demo"
+      >
+        collapse
+      </button>
+      <div id="demo" class="collapse">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam facere
+        tenetur molestiae voluptate provident incidunt nam dignissimos at verita
+        animi unde! Cumque, eveniet minus ut doloribus porro nobis doloremque!
+      </div>
+    </div>
+    <ul class="nav justify-content-around nav-tabs">
+      <li class="nav-item">
+        <a href="#" class="nav-link bg-primary text-white">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <div class="container my-4">
+      <button
+        type="button"
+        data-bs-toggle="modal"
+        class="btn btn-info"
+        data-bs-target="#myModal"
+      >
+        Open Modal
+      </button>
+    </div>
+    <div class="modal" id="myModal">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">this is a modal</h2>
+          </div>
+          <div class="modal-body">this is the body of modalt</div>
+          <div class="modal-footer">this is a footer</div>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-start" id="offcanvas">
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title">this is the title</h2>
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>Lorem ipsum dolor sit amet consectetur adipis</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipis</p>
+      </div>
+    </div>
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvas"
+    >
+      menu
+    </button>
   </body>
 </html>
