@@ -8,308 +8,264 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link href="/stylesheet/main.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>bootstrap learning</title>
   </head>
   <body>
-    <nav
-      class="navbar container-fluid navbar-expand-sm justify-content-between bg-dark px-4"
-    >
-      <ul class="navbar-nav me-2">
-        <li class="logo">
-          <a href="#" class="nav-link text-white"
-            ><span
-              ><img
-                class="rounded-circle"
-                src="/images/icon.png"
-                alt=""
-                style="height: 50px"
-              /> </span
-          ></a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link text-white">link1</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link text-white">link2</a>
-        </li>
-      </ul>
-      <form action="" class="d-flex mx-5">
-        <input type="text" class="form-control me-2" />
-        <button class="btn btn-primary" placeholder="Search">Search</button>
-      </form>
-    </nav>
-
-    <div class="container-fluid py-4 bg-primary text-white text-center">
-      <h1>My First Bootstrap Page</h1>
-      <p>Resize this responsive page to see the effect</p>
-    </div>
-    <div class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <h2>this is the carousel or we can say that this is a slide show</h2>
-          <p>this is the paragraph for the carousels</p>
-        </div>
-        <div class="carousel-item">
-          <h2>this is the carousel or we can say that this is a slide show</h2>
-          <p>this is the paragraph for the carousels</p>
-        </div>
-        <div class="carousel-item">
-          <h2>this is the carousel or we can say that this is a slide show</h2>
-          <p>this is the paragraph for the carousels</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-sm mt-5">
-      <div class="row">
-        <div class="col-sm-4">
-          <h2>Column 1</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-            praesentium similique. Harum reprehenderit blanditiis fuga illum
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <h2>Column 1</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-            praesentium similique. Harum reprehenderit blanditiis fuga illum
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <h2>Column 1</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-            praesentium similique. Harum reprehenderit blanditiis fuga illum
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- table hover dark  and other things 
-      <table
-        class="container table tabel-responsive-sm table-hover table-primary my-4"
-      >
-        <thead class="table-info">
-          <tr>
-            <th>name</th>
-            <th>Company</th>
-            <th>designation</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>vikrant</td>
-            <td>Zasya Solution</td>
-            <td>software</td>
-          </tr>
-
-          <tr>
-            <td>vikrant</td>
-            <td>Zasya Solution</td>
-            <td>software</td>
-          </tr>
-
-          <tr>
-            <td>vikrant</td>
-            <td>Zasya Solution</td>
-            <td>software</td>
-          </tr>
-        </tbody>
-      </table>-->
-    <!-- image rounded-circle -->
-    <div class="container">
-      <img class="rounded-circle float-" src="/images/icon.png" alt="" />
-    </div>
-
-    <div class="container alert alert-primary alert-dismissible">
-      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-      Success! This alert box could indicate a successful or positive action.
-    </div>
-    <!--full width button-->
-    <div class="container mt-4 d-grid">
-      <button type="button" class="btn mt-3 btn-primary">
-        <span class="spinner-border spinner-border-sm"></span>
-        Success
-      </button>
-      <button type="button" class="btn mt-3 btn-info">
-        <span class="spinner-grow spinner-grow-sm"></span>
-        information
-      </button>
-      <button type="button" class="btn mt-3 btn-danger">danger</button>
-      <!-- button group -->
-      <div class="btn-group my-4">
-        <button type="button" class="btn btn-outline-primary">Success</button>
-        <button type="button" class="btn btn-outline-info">information</button>
-        <button type="button" class="btn btn-outline-danger">
-          danger<span class="badge bg-primary">new</span>
-        </button>
-        <!-- it will work with the script  -->
-        <!-- dropdown -->
-        <div class="btn-group">
-          <button
-            type="dropdown"
-            class="btn btn-primary dropdown-toggle"
-            data-bs-toggle="dropdown"
-          >
-            Class
-          </button>
-
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">1</a>
-            <a class="dropdown-item" href="#">2</a>
-            <a class="dropdown-item" href="#">3</a>
-            <a class="dropdown-item" href="#">4</a>
-            <a class="dropdown-item" href="#">5</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- badges -->
-    <div class="container">
-      <h5>
-        this is the new line for the page
-        <span class="badge bg-primary">new</span>
-      </h5>
-    </div>
-    <div class="progress my-4">
-      <div
-        class="progress-bar progress-bar-striped progress-bar-animated progress-bar-sm bg-primary"
-        style="width: 70%; height: 10px"
-      >
-        70%
-      </div>
-    </div>
-    <div class="progress">
-      <div class="progress-bar bg-info" style="width: 50%">free space</div>
-      <div class="progress-bar bg-warning" style="width: 40%">warning</div>
-      <div class="progress-bar bg-danger" style="width: 10%">Danger</div>
-    </div>
-    <!-- spinner are here -->
     <div class="container-fluid">
-      <div class="spinner-border text-primary"></div>
-      <div class="spinner-border text-success"></div>
-      <div class="spinner-border text-warning"></div>
-      <div class="spinner-border text-danger"></div>
-      <div class="spinner-border text-secondary"></div>
+      <nav
+        class="navbar navbar-expand-md px-5 justify-content-center align-items-center bg-primary"
+      >
+        <ul class="navbar-nav text-center">
+          <span class="h2 text-white mx-5">Network_Crowd </span>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">Plan & Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">Tools & Tips</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-    <!-- pagination -->
-    <ul class="pagination pagination-lsm justify-content-center">
-      <li class="page-item"><a href="#" class="page-link"> previous </a></li>
-      <li class="page-item active"><a href="#" class="page-link"> 1 </a></li>
-      <li class="page-item"><a href="#" class="page-link"> 2 </a></li>
-      <li class="page-item"><a href="#" class="page-link"> 3 </a></li>
-
-      <li class="page-item"><a href="#" class="page-link"> next </a></li>
-    </ul>
-
-    <ul class="list-group">
-      <li
-        class="list-group-item d-flex list-group-item-success justify-content-between list-group-item-action"
-      >
-        inbox <span class="badge bg-info">1</span>
-      </li>
-      <li
-        class="list-group-item d-flex list-group-item-success justify-content-between list-group-item-action"
-      >
-        add <span class="badge bg-info">2</span>
-      </li>
-      <li
-        class="list-group-item d-flex list-group-item-success justify-content-between list-group-item-action"
-      >
-        junk <span class="badge bg-info">3</span>
-      </li>
-      <li
-        class="list-group-item d-flex list-group-item-success justify-content-between list-group-item-action"
-      >
-        social <span class="badge bg-info">4</span>
-      </li>
-      <li
-        class="list-group-item d-flex list-group-item-success justify-content-between list-group-item-action"
-      >
-        promotion <span class="badge bg-info">5</span>
-      </li>
-    </ul>
-
-    <div class="dropdown">
-      <button
-        type="button"
-        class="btn dropdown-toggle btn-primary"
-        data-bs-toggle="dropdown"
-      >
-        Dropdown Button
-      </button>
-      <ul class="dropdown-menu">
-        <li class="dropdown-item">1</li>
-        <li class="dropdown-item">2</li>
-        <li class="dropdown-item">3</li>
-      </ul>
-
-      <!-- collapse button and it will work with the script language -->
-      <button
-        data-bs-toggle="collapse"
-        class="btn btn-primary"
-        data-bs-target="#demo"
-      >
-        collapse
-      </button>
-      <div id="demo" class="collapse">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam facere
-        tenetur molestiae voluptate provident incidunt nam dignissimos at verita
-        animi unde! Cumque, eveniet minus ut doloribus porro nobis doloremque!
-      </div>
-    </div>
-    <ul class="nav justify-content-around nav-tabs">
-      <li class="nav-item">
-        <a href="#" class="nav-link bg-primary text-white">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">About</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">Contact</a>
-      </li>
-    </ul>
-
-    <div class="container my-4">
-      <button
-        type="button"
-        data-bs-toggle="modal"
-        class="btn btn-info"
-        data-bs-target="#myModal"
-      >
-        Open Modal
-      </button>
-    </div>
-    <div class="modal" id="myModal">
-      <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title">this is a modal</h2>
+    <div class="container-fluid d-flex">
+      <img src="/images/2.jpg" alt="" width="100%" />
+      <div class="section-1">
+        <div class="bg-light p-5 h-auto text-center w-100 h-100">
+          <div class="h4">Developing Innovative Strategies</div>
+          <div class="display-3 text-primary text-uppercase">
+            Achieving Growth
           </div>
-          <div class="modal-body">this is the body of modalt</div>
-          <div class="modal-footer">this is a footer</div>
+          <div>
+            <button class="btn p-3 px-4 mt-5 border border-dark" type="button">
+              Book a Consultation
+            </button>
+          </div>
         </div>
       </div>
     </div>
-    <div class="offcanvas offcanvas-start" id="offcanvas">
-      <div class="offcanvas-header">
-        <h2 class="offcanvas-title">this is the title</h2>
-        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
-      </div>
-      <div class="offcanvas-body">
-        <p>Lorem ipsum dolor sit amet consectetur adipis</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipis</p>
+    <div class="section-2 my-5 container">
+      <div class="d-grid text-center">
+        <div class="border shadow-lg px-5 py-5">
+          <p class="display-4">Services</p>
+          <p class="lineheight">
+            I'm a paragraph. Click here to add your own text and edit me. it's
+            easy. Just click "Edit Text" or double click me to add your own
+            content and make cahnges to the font. i'm a great place for you to
+            tell a story and let your users know a little more about you.
+          </p>
+          <button class="btn btn-moreinfo my-4 text-white">More info</button>
+        </div>
+        <div class="border shadow-lg py-5 px-5">
+          <p class="display-4">Projects</p>
+          <p class="line-height">
+            I'm a paragraph. Click here to add your own text and edit me. it's
+            easy. Just click "Edit Text" or double click me to add your own
+            content and make cahnges to the font. i'm a great place for you to
+            tell a story and let your users know a little more about you.
+          </p>
+          <button class="btn btn-moreinfo my-4 text-white">More info</button>
+        </div>
+        <div class="border shadow-lg py-5 px-5">
+          <p class="display-4">Clients</p>
+          <p class="line-height">
+            I'm a paragraph. Click here to add your own text and edit me. it's
+            easy. Just click "Edit Text" or double click me to add your own
+            content and make cahnges to the font. i'm a great place for you to
+            tell a story and let your users know a little more about you.
+          </p>
+
+          <button class="btn btn-moreinfo my-4 text-white">More info</button>
+        </div>
       </div>
     </div>
-    <button
-      type="button"
-      class="btn btn-outline-primary"
-      data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvas"
-    >
-      menu
-    </button>
+    <div class="my-5 section-3 h-100 container-fluid">
+      <!-- <div>
+        <img src="/images/2.jpg" alt="" width="100%" />
+      </div> -->
+
+      <div class="d-flex flex-wrap container-sm px-5">
+        <div class="display-4">About Us</div>
+        <div>
+          I'm paragraph. Click here to add your own text and edit me. It's easy.
+          just click "Edit Text' or double click me to add your own content and
+          make cahnges to the font. Feel free to drag me anywhere you like on
+          your page. I'm a great place for you to tell a stroy and let your
+          users know a little more about you.
+        </div>
+        <div class="my-3">
+          This is a great to write a long text about your company and your
+          services. you can use this space to go into a little more detail about
+          your company. Talk about your team and what services you provide. tell
+          your visitors the story of how you came up with the idea for your
+          business and what makes you different from your competitors. make your
+          campany stand out and show your visitor who you are.
+        </div>
+        <button class="btn p-3 px-5 mt-5 text-center bg-primary text-white">
+          Learn More
+        </button>
+      </div>
+    </div>
+
+    <div class="section-4 container-fluid">
+      <div class="text-uppercase text-center display-5">Testimonial</div>
+      <div
+        id="slider"
+        class="carousel slide mt-5 py-5 text-center"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#slider"
+            data-bs-slide-to="0"
+            class="active"
+          >
+            <div style="border: 5px solid black"></div>
+          </button>
+          <button type="button" data-bs-target="#slider" data-bs-slide-to="1">
+            <div style="border: 5px solid black"></div>
+          </button>
+          <button type="button" data-bs-target="#slider" data-bs-slide-to="2">
+            <div style="border: 5px solid black"></div>
+          </button>
+        </div>
+
+        <div class="carousel-inner line-height">
+          <div class="carousel-item active">
+            <blockquote>
+              " I'm a testimonial. Click to edit me and add text that says
+              <br />
+              something nice about you and your services."
+            </blockquote>
+            <p>
+              <span style="color: #063847">Project Manager</span> <br />
+              Sima Patel
+            </p>
+          </div>
+          <div class="carousel-item">
+            <blockquote>
+              "I'm a testimonial. Click to edit me and add text that says
+              <br />
+              something nice about you and your services.""
+            </blockquote>
+            <p>
+              <span style="color: #063847"> Project Manager</span> <br />
+              Dora Bridges
+            </p>
+          </div>
+          <div class="carousel-item">
+            <blockquote>
+              " I'm a testimonial. Click to edit me and add text that says
+              <br />
+              something nice about you and your services."
+            </blockquote>
+            <p>
+              <span style="color: #063847">Project Manager</span> <br />
+              Brad Steven
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-5 container-fluid mt-5 text-white bg-primary">
+      <div class="text-center py-5 display-5 text-uppercase">Contact Us</div>
+
+      <form action="">
+        <div class="row text-center">
+          <div class="col">
+            <input
+              field="First Name"
+              type="text"
+              name="fn"
+              id="fn"
+              placeholder="enter your name"
+              class="mx-5 border-0 border-bottom py-2 bg-primary"
+            />
+            <input
+              type="text"
+              name="fn"
+              id="fn"
+              placeholder="enter your last name"
+              class="mx-5 border-0 border-bottom py-2 bg-primary"
+            />
+            <input
+              type="email"
+              name="fn"
+              id="fn"
+              required
+              placeholder="enter your email *"
+              class="mx-5 border-0 border-bottom py-2 bg-primary"
+            />
+            <input
+              type="text"
+              name="fn"
+              id="fn"
+              placeholder="enter your subject"
+              class="mx-5 border-0 border-bottom py-2 bg-primary"
+            />
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="button" class="btn w-25 btn-light p-3 px-5 mb-3">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="section-6">
+      <footer class="bg-primary expand-md container-fluid text-white d-grid">
+        <div class="row line-height">
+          <div class="col-sm-4">
+            <p class="h3 text-uppercase mb-4">Network_Crowd</p>
+            <address>
+              Galma Distt-Mandi,<br />
+              Himachal Pradesh Mail:username@.com <br />
+              tel:123-456-789
+            </address>
+          </div>
+          <div class="col-sm-4">
+            <nav class="py-2">
+              <ul>
+                <li class="text-white mb-4" style="font-size: 2rem">Menu</li>
+                <a href="#"
+                  ><li class="text-white mx-3" id="about">About</li></a
+                >
+                <a href="#"
+                  ><li class="text-white mx-3" id="project">Project</li></a
+                >
+                <a href="#">
+                  <li class="text-white mx-3" id="services">Services</li></a
+                >
+                <a href="#">
+                  <li class="text-white mx-3" id="plan">Plan & Pricing</li></a
+                >
+                <a href="#"
+                  ><li class="text-white mx-3" id="tooltips">Tooltips</li></a
+                >
+                <a href="#"
+                  ><li class="text-white mx-3" id="contact">Contact</li></a
+                >
+              </ul>
+            </nav>
+          </div>
+          <div class="col-sm-4 d-flex align-items-center">
+            &copy; 2023 by NETWORK_CROWD.
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
