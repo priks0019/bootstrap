@@ -8,61 +8,104 @@
     <title>Learn Java Script</title>
   </head>
   <body onbeforeprint="print()">
-    <button type="button" onclick="dateAndTime()">
+    <button onclick="myFunction1()">pop-array</button>
+    <button onclick="myFunction2()">push-array</button>
+    <button onclick="myFunction3()">shift-array</button>
+    <button onclick="myFunction4()">unshift-array</button>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <!-- <button type="button" onclick="dateAndTime()">
       Click me to see the date and time
     </button>
     <button type="button" onclick="textReplace()">
       click to replace content
     </button>
+    <input type="text" id="__demo" onemptied="myFunction()" />
     <p id="demo"></p>
     <p id="hello"></p>
-    <p id="demo"></p>
+ 
     <p id="_demo"></p>
     <p id="$demo"></p>
     <p id="$$demo"></p>
-    <p id="$_demo">kiwi banana hello this is just for fun</p>
-
+    <p id="$_demo">kiwi banana hello this is just for fun</p> -->
+    <!-- <button type="button" onclick="global()">multi and add</button>
+   -->
     <script>
-      // array declaration
-      const detail = ["prikshit", 25, "web-developer"];
-      detail.push("thakur");
-      document.getElementById("hello").innerHTML = detail;
-      // typeof operator
-      document.getElementById("demo").innerHTML =
-        typeof "prikshit" + " <br> " + " " + typeof 55;
-      // object in javascript
-      const details = {
-        firstName: "prikshit",
-        lastName: "thakur",
-        age: 24,
-        fullDetail: function () {
-          return this.firstName + " " + this.lastName + " age is " + this.age;
-        },
-      };
-      document.getElementById("_demo").innerHTML =
-        details.firstName + " is " + details.age + " years old";
+      // // array declaration
+      // const detail = ["prikshit", 25, "web-developer"];
+      // detail.push("thakur");
+      // document.getElementById("hello").innerHTML = detail;
+      // // typeof operator
+      // document.getElementById("demo").innerHTML =
+      //   typeof "prikshit" + " <br> " + " " + typeof 55;
+      // // object in javascript
+      // const details = {
+      //   firstName: "prikshit",
+      //   lastName: "thakur",
+      //   age: 24,
+      //   fullDetail: function () {
+      //     return this.firstName + " " + this.lastName + " age is " + this.age;
+      //   },
+      // };
+      // document.getElementById("_demo").innerHTML =
+      //   details.firstName + " is " + details.age + " years old";
 
-      function myFunction(a1, a2) {
-        return a1 * a2;
+      // function myFunction(a1, a2) {
+      //   return a1 * a2;
+      // }
+      // document.getElementById("$demo").innerHTML = myFunction(5, 9);
+      // document.getElementById("$$demo").innerHTML = details.fullDetail();
+      // function dateAndTime() {
+      //   document.getElementById("demo").innerHTML = Date();
+      // }
+      // function print() {
+      //   alert("You want to print this page");
+      // }
+
+      // let fruits = "banana, kiwi, apple, kiwi, mango";
+      // document.getElementById("$_demo").innerHTML = fruits.slice(0);
+
+      // function textReplace() {
+      //   let text = document.getElementById("$_demo").innerHTML;
+      //   document.getElementById("$_demo").innerHTML = text.replace(
+      //     /kiwi/g,
+      //     "hello"
+      //   );
+      // }
+      // function myFunction() {
+      //   var txt = document.getElementById("__demo");
+      //   if (txt == null) {
+      //     console.log("pleae fill this field");
+      //   }
+      // }
+      // let name = "hello";
+      // let text = `This is ${name} "prikshit" from mandi`;
+      // document.getElementById("demo").innerHTML = text;
+
+      const cars = ["audi", "BMW", "maruti", "ferrari"];
+      document.getElementById("demo").innerHTML = cars;
+      function myFunction1() {
+        cars.pop();
+        document.getElementById("demo1").innerHTML = cars;
       }
-      document.getElementById("$demo").innerHTML = myFunction(5, 9);
-      document.getElementById("$$demo").innerHTML = details.fullDetail();
-      function dateAndTime() {
-        document.getElementById("demo").innerHTML = Date();
-      }
-      function print() {
-        alert("You want to print this page");
+      function myFunction2() {
+        cars.push("Mercedez-Benz");
+
+        document.getElementById("demo2").innerHTML = cars;
       }
 
-      let fruits = "banana, kiwi, apple, mango";
-      document.getElementById("$_demo").innerHTML = fruits.substr(0);
-
-      function textReplace() {
-        let text = document.getElementById("$_demo").innerHTML;
-        document.getElementById("$_demo").innerHTML = text.replace(
-          "kiwi",
-          "hello"
-        );
+      function myFunction3() {
+        cars.shift();
+        document.getElementById("demo3").innerHTML = cars;
+      }
+      function myFunction4() {
+        cars.unshift("rangerover");
+        document.getElementById("demo4").innerHTML = cars;
       }
     </script>
   </body>
