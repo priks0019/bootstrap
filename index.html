@@ -12,12 +12,26 @@
     <button onclick="myFunction2()">push-array</button>
     <button onclick="myFunction3()">shift-array</button>
     <button onclick="myFunction4()">unshift-array</button>
-
+    <button onclick="myFunction6()">sort the array</button>
+    <button onclick="myFunction7()">reverse the array</button>
+    <button onclick="myFunction8()">sort the number array</button>
+    <button onclick="myFunction9()">reverse sorting</button>
     <p id="demo"></p>
     <p id="demo1"></p>
     <p id="demo2"></p>
     <p id="demo3"></p>
     <p id="demo4"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <input type="text" id="demo5" onblur="myFunction5()" />
 
     <!-- <button type="button" onclick="dateAndTime()">
       Click me to see the date and time
@@ -44,7 +58,7 @@
       // document.getElementById("demo").innerHTML =
       //   typeof "prikshit" + " <br> " + " " + typeof 55;
       // // object in javascript
-      // const details = {
+      // const details = { //jasfsdsdjasd
       //   firstName: "prikshit",
       //   lastName: "thakur",
       //   age: 24,
@@ -87,8 +101,9 @@
       // let text = `This is ${name} "prikshit" from mandi`;
       // document.getElementById("demo").innerHTML = text;
 
-      const cars = ["audi", "BMW", "maruti", "ferrari"];
+      const cars = ["BMW", "Maruti", "Ferrari", "Audi"];
       document.getElementById("demo").innerHTML = cars;
+
       function myFunction1() {
         cars.pop();
         document.getElementById("demo1").innerHTML = cars;
@@ -107,6 +122,90 @@
         cars.unshift("rangerover");
         document.getElementById("demo4").innerHTML = cars;
       }
+
+      function myFunction5() {
+        let text = document.getElementById("demo5");
+        text.value = text.value.toUpperCase();
+      }
+      function myFunction6() {
+        cars.sort();
+        document.getElementById("demo6").innerHTML = cars;
+      }
+      function myFunction7() {
+        cars.reverse();
+        document.getElementById("demo7").innerHTML = cars;
+      }
+      const num = [10, 85, 1, 23, 988, -45, 2, 0];
+      document.getElementById("demo8").innerHTML = num;
+
+      function myFunction8() {
+        num.sort(function (a, b) {
+          return a - b;
+        });
+        document.getElementById("demo9").innerHTML = num;
+      }
+
+      function myFunction9() {
+        num.sort(function (a, b) {
+          return b - a;
+        });
+        document.getElementById("demo10").innerHTML = num;
+      }
+      const over23 = num.filter(myFunction);
+      document.getElementById("demo11").innerHTML = over23;
+      function myFunction(value, index, array) {
+        return value < 5;
+      }
+
+      const sum = num.reduce(myFunction12);
+      document.getElementById("demo12").innerHTML = "sum of array is : " + sum;
+      function myFunction12(total, value, index, array) {
+        return total + value;
+      }
+      let day;
+      switch (new Date().getDay()) {
+        case 0:
+          day = "Sunday";
+          break;
+        case 1:
+          day = "Monday";
+          break;
+        case 2:
+          day = "Tuesday";
+          break;
+        case 3:
+          day = "Wednesday";
+          break;
+        case 4:
+          day = "Thursday";
+          break;
+        case 5:
+          day = "Friday";
+          break;
+        case 6:
+          day = "Saturday";
+          break;
+      }
+      document.getElementById("demo13").innerHTML = "Today is " + day;
+
+      let text = "";
+      for (let i = 0; i < cars.length; i++) {
+        text += cars[i] + "<br/>";
+      }
+      document.getElementById("demo14").innerHTML = text;
+
+      const car = {
+        car1: "BMW",
+        car2: "Maruti",
+        car3: "Ferrari",
+        car4: "Audi",
+        car5: "RangeRover",
+      };
+      let txt = "";
+      for (let x in car) {
+        txt += car[x] + "<br/>";
+      }
+      alert((document.getElementById("demo15").innerHTML = txt));
     </script>
   </body>
 </html>
